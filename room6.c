@@ -14,15 +14,19 @@ void main(void) {
 		switch(select) {
 			case 1:
 				puts("The well is made of stone and holds still water at the very bottom. You see a shiny object.\nWhere else would you like to investigate?");
+				scanf("%d",&select);
 				break;
 			case 2:
 				puts("The crates are shut tight and is impossible to open without a specific tool.\nWhere else would you like to investigate?");
+				scanf("%d",&select);
 				break;
 			case 3: 
 				puts("The door will not yield by brute force, you require a key to move forward.\nWhere else would you like to investigate?");
+				scanf("%d",&select);
 				break;
 			case 4:
 				puts("The crack has an opening just enough to view into a small closet. It seems like the closet was a part of the room.\nWhere else would you like to investigate?");
+				scanf("%d",&select);
 				break;
 			case 5:
 				puts("Viewing the clothes you find a small chisel in the pockets. You decide to take the chisel.");
