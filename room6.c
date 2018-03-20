@@ -28,7 +28,7 @@ int main(void) {
 				scanf("%d",&select);
 				break;
 			default:
-				puts("That is not a valid place to investigate, please enter 1-5.");
+				puts("That is not a valid place to investigate, please pick a number from 1 to 5.");
 				scanf("%d",&select);
 				break;
 		}
@@ -53,6 +53,10 @@ int main(void) {
 			case 5:
 				puts("Despite not listing the clothes as an option, you decided to be a rebel and use the hammer and chisel on the pile of clothes anyway. You somehow tear the clothes using the hammer and chisel and found a key embedded into the clothes. You use the key on the locked door and discovered it worked! You escaped!");
 				return EXIT_SUCCESS;
+			default:
+				puts("That is not a valid choice, please pick a number from 1 to 5");
+				scanf("%d",&select);
+				break;
 		}
 	}
 
@@ -67,6 +71,10 @@ int main(void) {
 				puts("You attempted to pick the lock on the door but to no avail. What would you like to use the lockpick on?");
 				scanf("%d",&select);
 				break;
+			default:
+				puts("That is not a valid choice, please pick a number from 1 to 3");
+				scanf("%d",&select);
+				break;
 		}
 	}
 
@@ -79,6 +87,10 @@ int main(void) {
 				return 0;
 			case 3:
 				puts("You picked the lock for the third crate and found nothing. It turned out to be an unimpressive find. What would you like to use the lockpick on?");
+				scanf("%d",&select);
+				break;
+			default:
+				puts("That is not a valid choice, please pick a number from 1 to 3");
 				scanf("%d",&select);
 				break;
 		} 
@@ -101,9 +113,15 @@ int main(void) {
 						puts("You untie the rope and decided against climbing down. What would you like to do?\n1. Tie the rope and climb\n2. Lasso the object\n3. Look around for alternatives");
 						scanf("%d",&select);
 						break;
+					default:
+						puts("That is not a valid choice, please pick a number from 1 to 2");
 				}
 			case 2:
 				puts("You tie one end of the rope in a particular shape in order to scoop up the shiny object. It does not quite work. What would you like to do?");
+				scanf("%d",&select);
+				break;
+			default:
+				puts("That is not a valid choice, please pick a number from 1 to 3");
 				scanf("%d",&select);
 				break;
 		}
@@ -118,6 +136,10 @@ int main(void) {
 				return 0;
 			case 2:
 				puts("I know you can do better than that, try something else.");
+				scanf("%d",&select);
+				break;
+			default:
+				puts("That is not a valid choice, please pick a number from 1 to 3");
 				scanf("%d",&select);
 				break;
 		}
